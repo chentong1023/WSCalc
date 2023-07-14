@@ -22,10 +22,3 @@ class Character:
         env, _ = self.attack(env)
         return env
 
-class PAD_0dragon_full(Character):
-    def attack_phase(self, env):
-        env.cancelable_damage(4)
-        env.wait2deck(3)
-        env.cancelable_damage(4)
-        env, _ = self.attack(env)
-        return env
